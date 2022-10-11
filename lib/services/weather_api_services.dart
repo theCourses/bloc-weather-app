@@ -17,7 +17,6 @@ class WeatherApiServices {
   });
 
   Future<DirectGeocoding> getDirectGeocoding(String city) async {
-    print('Hello boi');
     final Uri uri = Uri(
         scheme: 'https',
         host: apiHost,
@@ -61,9 +60,7 @@ class WeatherApiServices {
         throw Exception(httpErrorHandler(response));
       }
       final weatherJson = json.decode(response.body);
-      print("WeatherJson" + weatherJson.toString());
       final Weather weather = Weather.fromJson(weatherJson);
-      print("out");
       return weather;
     } catch (e) {
       rethrow;
