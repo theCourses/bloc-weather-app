@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class SearchPage extends StatefulWidget {
   const SearchPage({super.key});
@@ -15,7 +13,7 @@ class _SearchPageState extends State<SearchPage> {
     return SafeArea(
         child: Scaffold(
       appBar: AppBar(title: const Text('Search')),
-      body: Center(child: const Text('Search')),
+      body: const Center(child: Text('Search')),
     ));
   }
 }

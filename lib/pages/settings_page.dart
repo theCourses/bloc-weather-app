@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
@@ -15,7 +13,7 @@ class _SettingsPageState extends State<SettingsPage> {
     return SafeArea(
         child: Scaffold(
       appBar: AppBar(title: const Text('Settings')),
-      body: Center(child: const Text('Settings')),
+      body: const Center(child: Text('Settings')),
     ));
   }
 }

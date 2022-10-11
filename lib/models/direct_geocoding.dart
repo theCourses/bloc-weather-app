@@ -9,7 +9,7 @@ class DirectGeocoding extends Equatable {
   final double lon;
   final String country;
 
-  DirectGeocoding({
+  const DirectGeocoding({
     required this.name,
     required this.lat,
     required this.lon,
